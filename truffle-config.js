@@ -1,6 +1,5 @@
 require('dotenv').config();
 const mnemonic = process.env["MNEMONIC"];
-// const infuraProjectId = process.env["INFURA_PROJECT_ID"];
 
 const HDWalletProvider = require('@truffle/hdwallet-provider');
 
@@ -13,7 +12,7 @@ module.exports = {
             network_id: "5777",       // Any network (default: none)
         },
         scroll: {
-            provider: () => new HDWalletProvider(MNEMONIC_PHRASE, "https://rpc.scroll.io/"),
+            provider: () => new HDWalletProvider(mnemonic, "https://rpc.scroll.io/"),
             network_id: '*'
         },
     },

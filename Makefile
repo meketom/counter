@@ -11,3 +11,7 @@ deploy-dev:
 .PHONY: deploy-scroll
 deploy-scroll:
 	truffle migrate --reset --network scroll
+
+.PHONY: interact
+interact:
+	truffle exec run.js --network scroll
