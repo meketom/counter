@@ -1,6 +1,10 @@
 {
   "dependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
     "@truffle/hdwallet-provider": "^2.1.15",
     "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "hardhat": "^2.19.4"
   }
 }

@@ -12,6 +12,10 @@ deploy-dev:
 deploy-scroll:
 	truffle migrate --reset --network scroll
 
-.PHONY: interact
-interact:
+.PHONY: deploy-linea
+deploy-linea:
+	npx hardhat run scripts/deploy.js --network linea_mainnet
+
+.PHONY: interact-scroll
+interact-scroll:
 	truffle exec run.js --network scroll
